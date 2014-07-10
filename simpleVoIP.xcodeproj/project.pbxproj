@@ -39,6 +39,9 @@
 		BA4A6057196E528F00C23EE7 /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6045196E528F00C23EE7 /* libresample-arm-apple-darwin9.a */; };
 		BA4A6058196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6046196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a */; };
 		BA4A6059196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6047196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a */; };
+		BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605C196E545200C23EE7 /* AudioToolbox.framework */; };
+		BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605E196E545900C23EE7 /* CFNetwork.framework */; };
+		BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6060196E546000C23EE7 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		BA4A6045196E528F00C23EE7 /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		BA4A6046196E528F00C23EE7 /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		BA4A6047196E528F00C23EE7 /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		BA4A605C196E545200C23EE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA4A605E196E545900C23EE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */,
+				BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */,
+				BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */,
 				BA4A6049196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
 				BA44220B196E44E2007A2AFA /* CoreGraphics.framework in Frameworks */,
 				BA4A604D196E528F00C23EE7 /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
@@ -155,6 +164,9 @@
 		BA442207196E44E2007A2AFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA4A6060196E546000C23EE7 /* AVFoundation.framework */,
+				BA4A605E196E545900C23EE7 /* CFNetwork.framework */,
+				BA4A605C196E545200C23EE7 /* AudioToolbox.framework */,
 				BA4A6036196E528F00C23EE7 /* libg7221codec-arm-apple-darwin9.a */,
 				BA4A6037196E528F00C23EE7 /* libgsmcodec-arm-apple-darwin9.a */,
 				BA4A6038196E528F00C23EE7 /* libilbccodec-arm-apple-darwin9.a */,
