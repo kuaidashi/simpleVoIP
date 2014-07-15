@@ -160,3 +160,17 @@ static void error_exit(const char *title, pj_status_t status)
     pjsua_destroy();
     exit(1);
 }
+
+void makeCall(char* destUri)
+{
+    pj_status_t status;
+    pj_str_t uri = pj_str(destUri);
+    
+    status = pjsua_call_make_call(acc_id, &uri, 0, NULL, NULL, NULL);
+    if (status != PJ_SUCCESS) error_exit("Error making call", status);
+}
+
+void endCall()
+{
+    pjsua_call_hangup_all();
+}

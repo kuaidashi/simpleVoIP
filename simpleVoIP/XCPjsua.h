@@ -29,4 +29,16 @@
  */
 int startPjsip(char *sipUser, char* sipDomain);
 
+/**
+ * Make VoIP call.
+ *
+ * @param destUri the uri of the receiver, something like "sip:192.168.43.106:5080"
+ */
+void makeCall(char* destUri);
+
+/**
+ * End ongoing VoIP calls
+ */
+void endCall();
+
 #endif
