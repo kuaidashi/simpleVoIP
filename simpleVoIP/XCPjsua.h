@@ -19,6 +19,14 @@
 #ifndef simpleVoIP_XCPjsua_h
 #define simpleVoIP_XCPjsua_h
 
-
+/**
+ * Initialize and start pjsua.
+ *
+ * @param sipUser the sip username to be used for register
+ * @param sipDomain the domain of the sip register server
+ *
+ * @return When successful, returns 0.
+ */
+int startPjsip(char *sipUser, char* sipDomain);
 
 #endif
