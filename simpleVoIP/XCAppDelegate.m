@@ -23,9 +23,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // You should change 192.168.43.106 to the IP of your own Mac
-    startPjsip("iPhone", "192.168.43.106");
-    makeCall("sip:192.168.43.106:5080");
     return YES;
 }
 							

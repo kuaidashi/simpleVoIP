@@ -23,11 +23,12 @@
  * Initialize and start pjsua.
  *
  * @param sipUser the sip username to be used for register
+ * @param password the login password
  * @param sipDomain the domain of the sip register server
  *
  * @return When successful, returns 0.
  */
-int startPjsip(char *sipUser, char* sipDomain);
+int startPjsip(char *sipUser, char *password, char* sipDomain);
 
 /**
  * Make VoIP call.

@@ -30,7 +30,7 @@ static void on_call_state(pjsua_call_id call_id, pjsip_event *e);
 static void on_call_media_state(pjsua_call_id call_id);
 static void error_exit(const char *title, pj_status_t status);
 
-int startPjsip(char *sipUser, char* sipDomain)
+int startPjsip(char *sipUser, char *password, char* sipDomain)
 {
     pj_status_t status;
     
@@ -92,13 +92,23 @@ int startPjsip(char *sipUser, char* sipDomain)
         
         pjsua_acc_config_default(&cfg);
         
+        // Account ID
         char sipId[MAX_SIP_ID_LENGTH];
         sprintf(sipId, "sip:%s@%s", sipUser, sipDomain);
         cfg.id = pj_str(sipId);
         
+        // Reg URI
         char regUri[MAX_SIP_REG_URI_LENGTH];
         sprintf(regUri, "sip:%s", sipDomain);
         cfg.reg_uri = pj_str(regUri);
+        
+        // Account cred info
+        cfg.cred_count = 1;
+        cfg.cred_info[0].scheme = pj_str("digest");
+        cfg.cred_info[0].realm = pj_str(sipDomain);
+        cfg.cred_info[0].username = pj_str(sipUser);
+        cfg.cred_info[0].data_type = PJSIP_CRED_DATA_PLAIN_PASSWD;
+        cfg.cred_info[0].data = pj_str(password);
         
         status = pjsua_acc_add(&cfg, PJ_TRUE, &acc_id);
         if (status != PJ_SUCCESS) error_exit("Error adding account", status);
