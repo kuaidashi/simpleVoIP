@@ -14,7 +14,7 @@
 		BA442215196E44E2007A2AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442214196E44E2007A2AFA /* main.m */; };
 		BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA442218196E44E2007A2AFA /* XCAppDelegate.m */; };
 		BA44221C196E44E2007A2AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44221A196E44E2007A2AFA /* Main.storyboard */; };
-		BA44221F196E44E2007A2AFA /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44221E196E44E2007A2AFA /* XCViewController.m */; };
+		BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44221E196E44E2007A2AFA /* XCLoginViewController.m */; };
 		BA442221196E44E2007A2AFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA442220196E44E2007A2AFA /* Images.xcassets */; };
 		BA442228196E44E2007A2AFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442227196E44E2007A2AFA /* XCTest.framework */; };
 		BA442229196E44E2007A2AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA442208196E44E2007A2AFA /* Foundation.framework */; };
@@ -67,8 +67,8 @@
 		BA442217196E44E2007A2AFA /* XCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAppDelegate.h; sourceTree = "<group>"; };
 		BA442218196E44E2007A2AFA /* XCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAppDelegate.m; sourceTree = "<group>"; };
 		BA44221B196E44E2007A2AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA44221D196E44E2007A2AFA /* XCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCViewController.h; sourceTree = "<group>"; };
-		BA44221E196E44E2007A2AFA /* XCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCViewController.m; sourceTree = "<group>"; };
+		BA44221D196E44E2007A2AFA /* XCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCLoginViewController.h; sourceTree = "<group>"; };
+		BA44221E196E44E2007A2AFA /* XCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCLoginViewController.m; sourceTree = "<group>"; };
 		BA442220196E44E2007A2AFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA442226196E44E2007A2AFA /* simpleVoIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleVoIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA442227196E44E2007A2AFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -203,9 +203,9 @@
 				BACD0DED19726B4A005A6607 /* XCPjsua.c */,
 				BA442217196E44E2007A2AFA /* XCAppDelegate.h */,
 				BA442218196E44E2007A2AFA /* XCAppDelegate.m */,
+				BA44221D196E44E2007A2AFA /* XCLoginViewController.h */,
+				BA44221E196E44E2007A2AFA /* XCLoginViewController.m */,
 				BA44221A196E44E2007A2AFA /* Main.storyboard */,
-				BA44221D196E44E2007A2AFA /* XCViewController.h */,
-				BA44221E196E44E2007A2AFA /* XCViewController.m */,
 				BA442220196E44E2007A2AFA /* Images.xcassets */,
 				BA44220F196E44E2007A2AFA /* Supporting Files */,
 			);
@@ -342,7 +342,7 @@
 				BACD0DEE19726B4A005A6607 /* XCPjsua.c in Sources */,
 				BA442215196E44E2007A2AFA /* main.m in Sources */,
 				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
-				BA44221F196E44E2007A2AFA /* XCViewController.m in Sources */,
+				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,13 +16,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#import "XCViewController.h"
+#import "XCLoginViewController.h"
+#import "XCPjsua.h"
 
-@interface XCViewController ()
+@interface XCLoginViewController ()
 
 @end
 
-@implementation XCViewController
+@implementation XCLoginViewController
 
 - (void)viewDidLoad
 {
@@ -34,6 +35,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)login:(id)sender
+{
+    // You should change the 1st and the 2nd parameter to your own user name and password
+    startPjsip("your_user_name", "your_password", "ekiga.net");
 }
 
 @end

@@ -18,6 +18,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XCViewController : UIViewController
+@interface XCLoginViewController : UIViewController
 
 @end
