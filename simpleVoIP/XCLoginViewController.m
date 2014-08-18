@@ -44,7 +44,29 @@
                                               withUserName:"your_user_name"
                                                andPassword:"your_password"
                                                   callback:^(BOOL success){
+                                                      [self loginCompleted:success];
                                                   }];
+}
+
+- (void)loginCompleted:(BOOL)success
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (success) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Succeeded"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    });
 }
 
 @end
