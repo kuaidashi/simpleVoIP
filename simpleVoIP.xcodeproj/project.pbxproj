@@ -42,7 +42,7 @@
 		BA4A605D196E545200C23EE7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605C196E545200C23EE7 /* AudioToolbox.framework */; };
 		BA4A605F196E545900C23EE7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A605E196E545900C23EE7 /* CFNetwork.framework */; };
 		BA4A6061196E546000C23EE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4A6060196E546000C23EE7 /* AVFoundation.framework */; };
-		BACD0DEE19726B4A005A6607 /* XCPjsua.c in Sources */ = {isa = PBXBuildFile; fileRef = BACD0DED19726B4A005A6607 /* XCPjsua.c */; };
+		BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD0DED19726B4A005A6607 /* XCPjsua.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +96,7 @@
 		BA4A605C196E545200C23EE7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BA4A605E196E545900C23EE7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BA4A6060196E546000C23EE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		BACD0DED19726B4A005A6607 /* XCPjsua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XCPjsua.c; sourceTree = "<group>"; };
+		BACD0DED19726B4A005A6607 /* XCPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPjsua.m; sourceTree = "<group>"; };
 		BACD0DEF19726B59005A6607 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BACD0DEF19726B59005A6607 /* XCPjsua.h */,
-				BACD0DED19726B4A005A6607 /* XCPjsua.c */,
+				BACD0DED19726B4A005A6607 /* XCPjsua.m */,
 				BA442217196E44E2007A2AFA /* XCAppDelegate.h */,
 				BA442218196E44E2007A2AFA /* XCAppDelegate.m */,
 				BA44221D196E44E2007A2AFA /* XCLoginViewController.h */,
@@ -339,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BACD0DEE19726B4A005A6607 /* XCPjsua.c in Sources */,
+				BACD0DEE19726B4A005A6607 /* XCPjsua.m in Sources */,
 				BA442215196E44E2007A2AFA /* main.m in Sources */,
 				BA442219196E44E2007A2AFA /* XCAppDelegate.m in Sources */,
 				BA44221F196E44E2007A2AFA /* XCLoginViewController.m in Sources */,

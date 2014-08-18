@@ -40,7 +40,11 @@
 - (IBAction)login:(id)sender
 {
     // You should change the 1st and the 2nd parameter to your own user name and password
-    startPjsip("your_user_name", "your_password", "ekiga.net");
+    [[XCPjsua sharedXCPjsua] startPjsipAndRegisterOnServer:"ekiga.net"
+                                              withUserName:"your_user_name"
+                                               andPassword:"your_password"
+                                                  callback:^(BOOL success){
+                                                  }];
 }
 
 @end

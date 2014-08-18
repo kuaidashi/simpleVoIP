@@ -16,8 +16,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#ifndef simpleVoIP_XCPjsua_h
-#define simpleVoIP_XCPjsua_h
+#import <Foundation/Foundation.h>
+
+@interface XCPjsua : NSObject
+
+/**
+ * The callback for register pjsip account.
+ */
+typedef void (^RegisterCallBack)(BOOL success);
+
+/**
+ * Get the singleton XCPjsua.
+ */
++ (XCPjsua *)sharedXCPjsua;
 
 /**
  * Initialize and start pjsua.
@@ -28,18 +39,21 @@
  *
  * @return When successful, returns 0.
  */
-int startPjsip(char *sipUser, char *password, char* sipDomain);
+- (int)startPjsipAndRegisterOnServer:(char *)sipDomain
+                        withUserName:(char *)sipUser
+                         andPassword:(char *)password
+                            callback:(RegisterCallBack)callback;
 
 /**
  * Make VoIP call.
  *
  * @param destUri the uri of the receiver, something like "sip:192.168.43.106:5080"
  */
-void makeCall(char* destUri);
+- (void)makeCallTo:(char*)destUri;
 
 /**
  * End ongoing VoIP calls
  */
-void endCall();
+- (void)endCall;
 
-#endif
+@end
